@@ -123,15 +123,6 @@
                     <tr>\
                         <td colspan="2">' + (feature.properties['Lien'] !== null ? autolinker.link(feature.properties['Lien'].toLocaleString()) : '') + '</td>\
                     </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['donnees-carte-synthese-tricolore_date'] !== null ? autolinker.link(feature.properties['donnees-carte-synthese-tricolore_date'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['donnees-carte-synthese-tricolore_code_departement'] !== null ? autolinker.link(feature.properties['donnees-carte-synthese-tricolore_code_departement'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['donnees-carte-synthese-tricolore_indicateur_synthese'] !== null ? autolinker.link(feature.properties['donnees-carte-synthese-tricolore_indicateur_synthese'].toLocaleString()) : '') + '</td>\
-                    </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
